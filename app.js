@@ -1,0 +1,187 @@
+/* =========================================================
+   RETROVAULTWEAR — app.js (PRONTO E SIMPLES)
+   - Para mudar preço: altere SOMENTE "price" no DATA.
+   - No WhatsApp aparece SOMENTE o nome do produto.
+   ========================================================= */
+
+const WHATSAPP_NUMBER = "5599999999999"; // <-- TROQUE AQUI
+
+function waLink(message){
+  const text = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+}
+
+/* =========================
+   DADOS DO SITE
+   ========================= */
+const DATA = {
+  collections: [
+
+{
+      id: "Promoção",
+      name: "Promoção",
+      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
+      cover: "images/colecoes/promoção.jpg",
+      tags: ["anime", "retro", "street"],
+      products: [
+        { name: "Goku Sayajin",   img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
+        { name: "Trunks Sayajin", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
+        { name: "Vegeta Sayajin", img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
+        { name: "Piccolo",        img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
+        { name: "Freeza",         img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
+        { name: "Zoro",           img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true }
+      ]
+    },
+
+    {
+      id: "dragon-ball",
+      name: "Coleção Dragon Ball",
+      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
+      cover: "images/colecoes/dragonball.jpg",
+      tags: ["anime", "retro", "street"],
+      products: [
+        { name: "Goku Sayajin",   img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Trunks Sayajin", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Vegeta Sayajin", img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Piccolo",        img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Freeza",         img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+      ]
+    },
+    {
+      id: "street-fighter",
+      name: "Coleção Street Fighter",
+      desc: "Clássicos do arcade em camisetas retrô — estilo limpo e premium.",
+      cover: "images/colecoes/streetfighter.jpg",
+      tags: ["arcade", "retro", "game"],
+      products: [
+        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "P" },
+        { name: "Dhalsim", img: "images/produto/Dhalsimesgotado.jpg", price: 45, size: "G" },
+        { name: "Guile",   img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Sagat",   img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Vega",    img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+      ]
+    },
+     {
+      id: "Os Cavaleiros do Zodíaco",
+      name: "Coleção Os Cavaleiros do Zodíaco",
+      desc: "Clássicos do arcade em camisetas retrô — estilo limpo e premium.",
+      cover: "images/colecoes/cavaleirosdosodiacos.jpg",
+      tags: ["arcade", "retro", "game"],
+      products: [
+        { name: "Blanka",  img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Dhalsim", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Guile",   img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Sagat",   img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
+        { name: "Vega",    img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+      ]
+    },
+  ]
+};
+
+/* =========================
+   MENU MOBILE
+   ========================= */
+function initMobileMenu(){
+  const toggle = document.getElementById("navToggle");
+  const mobile = document.getElementById("navMobile");
+  if(!toggle || !mobile) return;
+
+  toggle.addEventListener("click", () => mobile.classList.toggle("is-open"));
+  mobile.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobile.classList.remove("is-open")));
+}
+
+/* Helpers */
+function setYear(){
+  const y = document.getElementById("year");
+  if(y) y.textContent = new Date().getFullYear();
+}
+function initWhatsButtons(){
+  const btnHeader = document.getElementById("btnWhatsHeader");
+  const btnFooter = document.getElementById("btnWhatsFooter");
+  const msg = "Olá! Vim pelo site RETROVAULTWEAR e quero comprar uma camiseta.";
+  if(btnHeader) btnHeader.href = waLink(msg);
+  if(btnFooter) btnFooter.href = waLink(msg);
+}
+function moneyBR(value){
+  const n = Number(value);
+  if(Number.isNaN(n)) return "0,00";
+  return n.toFixed(2).replace(".", ",");
+}
+function getQueryParam(name){
+  const url = new URL(window.location.href);
+  return url.searchParams.get(name);
+}
+
+/* INDEX — Coleções */
+function renderCollections(){
+  const grid = document.getElementById("collectionsGrid");
+  if(!grid) return;
+
+  grid.innerHTML = DATA.collections.map(col => `
+    <a class="card" href="colecao.html?id=${encodeURIComponent(col.id)}" aria-label="Abrir coleção ${col.name}">
+      <img class="card__img" src="${col.cover}" alt="Imagem da coleção ${col.name}">
+      <div class="card__body">
+        <h3 class="card__title">${col.name}</h3>
+        <p class="card__desc">${col.desc}</p>
+        <div class="badges">
+          ${(col.tags || []).map(t => `<span class="badge">#${t}</span>`).join("")}
+        </div>
+      </div>
+    </a>
+  `).join("");
+}
+
+/* COLECAO — Produtos */
+function renderCollectionPage(){
+  const productsGrid = document.getElementById("productsGrid");
+  if(!productsGrid) return;
+
+  const id = getQueryParam("id");
+  const col = DATA.collections.find(c => c.id === id) || DATA.collections[0];
+
+  const titleEl = document.getElementById("collectionTitle");
+  const descEl  = document.getElementById("collectionDesc");
+  if(titleEl) titleEl.textContent = col.name;
+  if(descEl)  descEl.textContent = col.desc;
+
+  document.title = `RETROVAULTWEAR — ${col.name}`;
+
+  productsGrid.innerHTML = (col.products || []).map(p => {
+    const msg = `Olá! Vim pelo site RETROVAULTWEAR e quero comprar uma camiseta: ${p.name}`; // WhatsApp só o nome
+    const buyHref = waLink(msg);
+    return `
+      <div class="card">
+        <img class="card__img" src="${p.img}" alt="Camiseta ${p.name}">
+        <div class="card__body">
+          <h3 class="card__title">${p.name}</h3>
+
+          <p class="card__desc">ESTAMPAS EXCLUSIVAS</p>
+          <div class="specs">
+            <span class="spec">ALGODÃO 30.1 PENTEADO</span>
+            <span class="spec">ESTAMPAS RESPIRÁVEL</span>
+            <span class="spec">DISPONÍVEL: TAMANHO ${(p.size || "M")}</span>
+          </div>
+
+          <p class="price">
+  R$ ${moneyBR(p.price ?? 45)}
+  ${p.last ? '<span class="last-unit">ÚLTIMA UNIDADE</span>' : ''}
+</p>
+
+
+          <div class="btnRow">
+            <a class="btn" href="${buyHref}" target="_blank" rel="noopener">Comprar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+/* INIT */
+(function init(){
+  initMobileMenu();
+  initWhatsButtons();
+  setYear();
+  renderCollections();
+  renderCollectionPage();
+})();

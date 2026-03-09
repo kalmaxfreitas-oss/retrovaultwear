@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RETROVAULTWEAR — Coleção</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="Ir para início">
+        <img class="brand__logo" src="images/logo1.svg" alt="RETROVAULTWEAR">
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Início</a>
+        <a class="nav__link" href="index.html#colecoes">Coleções</a>
+      </nav>
+
+      <button class="navToggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navMobile" id="navMobile">
+      <a class="navMobile__link" href="index.html">Início</a>
+      <a class="navMobile__link" href="index.html#colecoes">Coleções</a>
+    </div>
+  </header>
+
+  <section class="pageHead">
+    <div class="container pageHead__inner">
+      <div>
+        <p class="kicker">Em breve serão adicionados mais produtos à coleção.</p>
+        <h1 class="pageHead__title" id="collectionTitle">Carregando…</h1>
+        <p class="pageHead__subtitle" id="collectionDesc">Aguarde.</p>
+      </div>
+
+      <a class="btn" href="index.html#colecoes">Voltar</a>
+    </div>
+  </section>
+
+  <main class="container section">
+    <div class="section__head">
+      <h2 class="section__title">Produtos</h2>
+      <p class="section__hint" id="collectionSizeHint"></p>
+    </div>
+
+    <div class="grid" id="productsGrid"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> RETROVAULTWEAR</p>
+      <a class="footer__link" href="#" id="btnWhatsFooter">Comprar pelo WhatsApp</a>
+      <p class="footer__addr">📍 APUIARES-CE</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
