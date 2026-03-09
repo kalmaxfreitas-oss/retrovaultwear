@@ -225,3 +225,8 @@ button:active {
 outline: none !important;
 box-shadow: none !important;
 }
+
+/* remove highlight no mobile */
+*{
+-webkit-tap-highlight-color: transparent;
+}
