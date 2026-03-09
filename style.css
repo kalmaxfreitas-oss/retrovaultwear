@@ -217,3 +217,10 @@ image-rendering: auto; /* deixa suave e definido */}
   50%{opacity:0;}
   100%{opacity:1;}
 }
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+outline: none;
+}
