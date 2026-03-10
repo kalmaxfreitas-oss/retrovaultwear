@@ -24,12 +24,12 @@ const DATA = {
       cover: "images/colecoes/promoção.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Goku Sayajin",   img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
-        { name: "Trunks Sayajin", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
-        { name: "Vegeta Sayajin", img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
-        { name: "Piccolo",        img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
-        { name: "Freeza",         img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true },
-        { name: "Zoro",           img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 35 , last: true }
+        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Trunks Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Zoro",           img: "images/produto/blanka.jpg", price: 35 , last: true }
       ]
     },
 
@@ -40,11 +40,11 @@ const DATA = {
       cover: "images/colecoes/dragonball.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Goku Sayajin",   img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Trunks Sayajin", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Vegeta Sayajin", img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Piccolo",        img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Freeza",         img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Trunks Sayajin", img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 45 }
       ]
     },
     {
@@ -55,10 +55,10 @@ const DATA = {
       tags: ["arcade", "retro", "game"],
       products: [
         { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "P" },
-        { name: "Dhalsim", img: "images/produto/Dhalsimesgotado.jpg", price: 45, size: "G" },
-        { name: "Guile",   img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Sagat",   img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Vega",    img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+        { name: "Dhalsim", img: "images/produto/blanka.jpg", price: 45, size: "G" },
+        { name: "Guile",   img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Sagat",   img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Vega",    img: "images/produto/blanka.jpg", price: 45 }
       ]
     },
      {
@@ -68,11 +68,11 @@ const DATA = {
       cover: "images/colecoes/cavaleirosdosodiacos.jpg",
       tags: ["arcade", "retro", "game"],
       products: [
-        { name: "Blanka",  img: "https://images.unsplash.com/photo-1520975958225-29bcd1a7348c?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Dhalsim", img: "https://images.unsplash.com/photo-1520975682071-ae4bdc5a6b19?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Guile",   img: "https://images.unsplash.com/photo-1520975867391-3c34b0bdbb55?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Sagat",   img: "https://images.unsplash.com/photo-1520975864058-2f09f9b1c2d0?auto=format&fit=crop&w=1600&q=80", price: 45 },
-        { name: "Vega",    img: "https://images.unsplash.com/photo-1520975688922-0ce4c8c4a6f7?auto=format&fit=crop&w=1600&q=80", price: 45 }
+        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Dhalsim", img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Guile",   img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Sagat",   img: "images/produto/blanka.jpg", price: 45 },
+        { name: "Vega",    img: "images/produto/blanka.jpg", price: 45 }
       ]
     },
   ]
