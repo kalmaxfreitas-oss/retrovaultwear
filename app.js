@@ -147,7 +147,7 @@ function renderCollectionPage(){
   document.title = `RETROVAULTWEAR — ${col.name}`;
 
   productsGrid.innerHTML = (col.products || []).map(p => {
-    const msg = `Olá! Vim pelo site RETROVAULTWEAR e quero comprar uma camiseta: ${p.name}`; // WhatsApp só o nome
+    const msg = `Olá! Vim pelo site RETROVAULTWEAR e quero comprar uma camiseta do ${p.name}`; // WhatsApp só o nome
     const buyHref = waLink(msg);
     return `
       <div class="card">
