@@ -24,7 +24,7 @@ const DATA = {
       cover: "images/colecoes/promoção.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 35 , preorder: true , size: "P" },
         { name: "Trunks Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
         { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
         { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 35 , last: true },
@@ -163,8 +163,13 @@ function renderCollectionPage(){
           </div>
 
           <p class="price">
+          
   R$ ${moneyBR(p.price ?? 45)}
+  
   ${p.last ? '<span class="last-unit">ÚLTIMA UNIDADE</span>' : ''}
+
+  ${p.preorder ? '<span class="preorder">DISPONÍVEL POR ENCOMENDA</span>' : ''}
+  
 </p>
 
 
