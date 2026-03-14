@@ -151,6 +151,7 @@ function renderCollectionPage(){
     const buyHref = waLink(msg);
     return `
       <div class="card">
+      <a href="produto.html?colecao=${col.id}&produto=${col.products.indexOf(p)}">
         <img class="card__img" src="${p.img}" alt="Camiseta ${p.name}">
         <div class="card__body">
           <h3 class="card__title">${p.name}</h3>
