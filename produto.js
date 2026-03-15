@@ -82,6 +82,23 @@ if(btnShare){
 
 }
 
+// BOTÃO VOLTAR INTELIGENTE
+
+const btnVoltar = document.getElementById("btnVoltar");
+
+if(btnVoltar){
+
+  btnVoltar.addEventListener("click", () => {
+
+    if(history.length > 1){
+      history.back();
+    }else{
+      window.location.href = "index.html";
+    }
+
+  });
+
+}
 
 
 
