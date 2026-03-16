@@ -1,3 +1,5 @@
+let produto;
+
 (function(){
 
 const params = new URLSearchParams(window.location.search);
@@ -11,7 +13,7 @@ const colecao = DATA.collections.find(c => c.id === colecaoId);
 
 if(!colecao) return;
 
-const produto = colecao.products[produtoIndex];
+produto = colecao.products[produtoIndex];
 
 if(!produto) return;
 
