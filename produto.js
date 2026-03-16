@@ -65,13 +65,12 @@ if(btnShare){
 
   btnShare.addEventListener("click", async () => {
 
-    const url = window.location.href;
     const shareUrl =
-window.location.origin +
-"/share.html?img=images/produto/" +
-produto.img +
-"&url=" +
-window.location.search.replace("?", "");
+    window.location.origin +
+    "/share.html?img=" +
+    produto.img +
+    "&url=" +
+    window.location.search.replace("?", "");
 
     if(navigator.share){
       await navigator.share({
@@ -80,14 +79,13 @@ window.location.search.replace("?", "");
         url: shareUrl
       });
     } else {
-      navigator.clipboard.writeText(url);
+      navigator.clipboard.writeText(shareUrl);
       alert("Link copiado!");
     }
 
   });
 
 }
-
 
 
 
