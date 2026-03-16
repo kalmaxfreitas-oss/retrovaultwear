@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RetroVaultWear</title>
+
+<meta property="og:title" content="RetroVaultWear">
+<meta property="og:description" content="Camisetas retrô de animes e games">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const img = params.get("img");
+const url = params.get("url");
+
+if(img){
+document.querySelector('meta[property="og:image"]').content =
+window.location.origin + "/img/" + img;
+}
+
+if(url){
+document.querySelector('meta[property="og:url"]').content =
+window.location.origin + "/produto.html?" + url;
+
+setTimeout(()=>{
+window.location.href = "/produto.html?" + url;
+},500);
+}
+</script>
+
+</head>
+<body>
+Redirecionando...
+</body>
+</html>
