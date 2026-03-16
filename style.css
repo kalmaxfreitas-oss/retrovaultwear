@@ -330,7 +330,8 @@ box-shadow: none;
     font-size: 26px;
   }
 
-  #btnWhats{
+  #btnWhats,
+  #btnShare{
     width: 100%;
     display: block;
     padding: 14px;
