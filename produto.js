@@ -65,7 +65,14 @@ if(btnShare){
 
   btnShare.addEventListener("click", async () => {
 
-    const url = window.location.href;
+    const url =
+window.location.origin +
+"/share.html?img=" +
+produto.img +
+"&url=colecao=" +
+colecaoId +
+"&produto=" +
+produtoIndex;
 
     if(navigator.share){
       await navigator.share({
