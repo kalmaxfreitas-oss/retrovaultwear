@@ -65,20 +65,19 @@ if(btnShare){
 
   btnShare.addEventListener("click", async () => {
 
-    const url =
+    const url = window.location.href;
+    const shareUrl =
 window.location.origin +
-"/share.html?img=" +
+"/share.html?img=images/produto/" +
 produto.img +
-"&url=colecao=" +
-colecaoId +
-"&produto=" +
-produtoIndex;
+"&url=" +
+window.location.search.replace("?", "");
 
     if(navigator.share){
       await navigator.share({
         title: document.title,
         text: "Olha essa camiseta que encontrei:",
-        url: url
+        url: shareUrl
       });
     } else {
       navigator.clipboard.writeText(url);
