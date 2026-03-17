@@ -75,6 +75,18 @@ const DATA = {
         { name: "Vega",    img: "images/produto/blanka.jpg", price: 45 }
       ]
     },
+     {
+      id: "One Piece",
+      name: "Coleção One Piece",
+      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
+      cover: "images/colecoes/onepiece.jpg",
+      tags: ["anime", "retro", "street"],
+      products: [
+        { name: "Luffy", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" },
+        { name: "Ice", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" },
+        { name: "Zoro", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" }
+      ]
+    },
   ]
 };
 
