@@ -98,7 +98,7 @@ btnShare.addEventListener("click", async () => {
     });
   } else {
     navigator.clipboard.writeText(url);
-    alert("Link copiado!");
+    console.log("Link copiado!");
   }
 
 });
