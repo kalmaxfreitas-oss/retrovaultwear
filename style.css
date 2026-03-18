@@ -267,10 +267,9 @@ box-shadow: none;
 .produtoImgBox{
   flex:1;
   display:flex;
-  justify-content:center;
+  flex-direction:column;
   align-items:center;
 }
-
 .produtoImgBox img{
   max-width:350px;
   border-radius:8px;
@@ -305,6 +304,11 @@ box-shadow: none;
    ========================= */
 
 @media (max-width: 768px){
+
+.miniaturas img{
+  width:55px;
+  height:55px;
+}
 
   .produtoCard{
     flex-direction: column;
@@ -420,4 +424,49 @@ box-shadow: none;
   cursor:zoom-in;
 }
 
+.miniaturas {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
 
+.miniaturas img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.miniaturas img:hover {
+  border: 2px solid #fff;
+}
+
+.miniaturas{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.miniaturas img{
+  width:65px;
+  height:65px;
+  object-fit:cover;
+  cursor:pointer;
+  border-radius:6px;
+  border:2px solid transparent;
+  transition:0.2s;
+}
+
+.miniaturas img:hover{
+  border:2px solid #fff;
+  transform:scale(1.05);
+}
+
+.miniaturas img.ativa{
+  border:2px solid #ffffff;
+}
