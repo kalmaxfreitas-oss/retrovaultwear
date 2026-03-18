@@ -25,11 +25,11 @@ const DATA = {
       tags: ["anime", "retro", "street"],
       products: [
         { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 35 , preorder: true , size: "P-M-G" },
-        { name: "Trunks Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Trunks Sayajin", img: "images/produto/zoro.jpg", price: 35 , last: true },
         { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 35 , last: true },
-        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Piccolo",        img: "images/produto/zoro.jpg", price: 35 , last: true },
         { name: "Freeza",         img: "images/produto/blanka.jpg", price: 35 , last: true },
-        { name: "Zoro",           img: "images/produto/blanka.jpg", price: 35 , last: true }
+        { name: "Zoro",           img: "images/produto/zoro.jpg", price: 35 , last: true }
       ]
     },
 
