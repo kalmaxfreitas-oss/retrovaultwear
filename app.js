@@ -4,7 +4,7 @@
    - No WhatsApp aparece SOMENTE o nome do produto.
    ========================================================= */
 
-const WHATSAPP_NUMBER = "5599999999999"; // <-- TROQUE AQUI
+const WHATSAPP_NUMBER = "5585994020887"; // <-- TROQUE AQUI
 
 function waLink(message){
   const text = encodeURIComponent(message);
