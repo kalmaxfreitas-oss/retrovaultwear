@@ -31,9 +31,9 @@ document.getElementById("ogImage").setAttribute(
 );
 
 // WHATSAPP
-const msg = `Olá! Quero comprar a camiseta ${produto.name}`;
+const msg = `Olá! Vim pelo site RETROVAULTWEAR e quero comprar uma camiseta do ${produto.name}`;
 document.getElementById("btnWhats").href =
-"https://wa.me/5599999999999?text=" + encodeURIComponent(msg);
+"https://wa.me/5585994020887?text=" + encodeURIComponent(msg);
 
 // 🔥 MINIATURAS (AQUI ESTÁ O SEGREDO)
 if(miniaturasBox){
