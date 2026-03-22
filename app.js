@@ -54,11 +54,11 @@ const DATA = {
       cover: "images/colecoes/streetfighter.jpg",
       tags: ["arcade", "retro", "game"],
       products: [
-        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "P" },
-        { name: "Dhalsim", img: "images/produto/blanka.jpg", price: 45, size: "G" },
-        { name: "Guile",   img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Sagat",   img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Vega",    img: "images/produto/blanka.jpg", price: 45 }
+        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "M", last: true },
+        { name: "Dhalsim", img: "images/produto/dhalsin.jpg", price: 45, size: "M", last: true },
+        { name: "Guile",   img: "images/produto/guiler.jpg", price: 45, size: "M", last: true },
+        { name: "Sagat",   img: "images/produto/sagat.jpg", price: 45, size: "M", last: true },
+        { name: "Vega",    img: "images/produto/vega.jpg", price: 45, size: "M", last: true }
       ]
     },
      {
