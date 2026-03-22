@@ -80,11 +80,9 @@ const DATA = {
       cover: "images/colecoes/cavaleirosdosodiacos.jpg",
       tags: ["arcade", "retro", "game"],
       products: [
-        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Dhalsim", img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Guile",   img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Sagat",   img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Vega",    img: "images/produto/blanka.jpg", price: 45 }
+        { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 45, last: true , size: "M" },
+        { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 45, last: true , size: "M" },
+        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 45, last: true , size: "M" }
       ]
     },
   ]
