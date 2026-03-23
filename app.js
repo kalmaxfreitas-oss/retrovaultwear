@@ -3,6 +3,12 @@
    - Para mudar preço: altere SOMENTE "price" no DATA.
    - No WhatsApp aparece SOMENTE o nome do produto.
    ========================================================= */
+/* =========================================================
+   price: 35 (valor da camisa)
+   preorder: true (disponivel por encomenda)
+   last: true (ultima unidade)
+   size: "M" (tamanho da camisa)
+   ========================================================= */
 
 const WHATSAPP_NUMBER = "5585994020887"; // <-- TROQUE AQUI
 
