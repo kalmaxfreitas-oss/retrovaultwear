@@ -35,7 +35,7 @@ const DATA = {
 
     {
       id: "dragon-ball",
-      name: "Coleção Dragon Ball",
+      name: "Coleção - Dragon Ball",
       desc: "Camisetas inspiradas no universo de Dragon Ball — retrô premium.",
       cover: "images/colecoes/dragonball.jpg",
       tags: ["anime", "retro", "street"],
@@ -49,7 +49,7 @@ const DATA = {
     },
     {
       id: "street-fighter",
-      name: "Coleção Street Fighter",
+      name: "Coleção - Street Fighter",
       desc: "Camisetas inspiradas no universo de Street Fighter — retrô premium.",
       cover: "images/colecoes/streetfighter.jpg",
       tags: ["arcade", "retro", "game"],
@@ -63,7 +63,7 @@ const DATA = {
     },
      {
       id: "One Piece",
-      name: "Coleção One Piece",
+      name: "Coleção - One Piece",
       desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
       cover: "images/colecoes/onepiece.jpg",
       tags: ["anime", "retro", "street"],
@@ -75,7 +75,7 @@ const DATA = {
     },
      {
       id: "Os Cavaleiros do Zodíaco",
-      name: "Coleção Os Cavaleiros do Zodíaco",
+      name: "Coleção - Os Cavaleiros do Zodíaco",
       desc: "Camisetas inspiradas no universo de Os Cavaleiros do Zodíaco — retrô premium.",
       cover: "images/colecoes/cavaleirosdosodiacos.jpg",
       tags: ["anime", "retro", "street"],
