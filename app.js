@@ -36,7 +36,7 @@ const DATA = {
     {
       id: "dragon-ball",
       name: "Coleção Dragon Ball",
-      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
+      desc: "Camisetas inspiradas no universo de Dragon Ball — retrô premium.",
       cover: "images/colecoes/dragonball.jpg",
       tags: ["anime", "retro", "street"],
       products: [
@@ -50,7 +50,7 @@ const DATA = {
     {
       id: "street-fighter",
       name: "Coleção Street Fighter",
-      desc: "Clássicos do arcade em camisetas retrô — estilo limpo e premium.",
+      desc: "Camisetas inspiradas no universo de Street Fighter — retrô premium.",
       cover: "images/colecoes/streetfighter.jpg",
       tags: ["arcade", "retro", "game"],
       products: [
@@ -76,13 +76,13 @@ const DATA = {
      {
       id: "Os Cavaleiros do Zodíaco",
       name: "Coleção Os Cavaleiros do Zodíaco",
-      desc: "Clássicos do arcade em camisetas retrô — estilo limpo e premium.",
+      desc: "Camisetas inspiradas no universo de Os Cavaleiros do Zodíaco — retrô premium.",
       cover: "images/colecoes/cavaleirosdosodiacos.jpg",
-      tags: ["arcade", "retro", "game"],
+      tags: ["anime", "retro", "street"],
       products: [
-        { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 45, last: true , size: "M" },
-        { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 45, last: true , size: "M" },
-        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 45, last: true , size: "M" }
+        { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 45, last: true , size: "P" },
+        { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 45, last: true , size: "P" },
+        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 45, last: true , size: "P" }
       ]
     },
   ]
