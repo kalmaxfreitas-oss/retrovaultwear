@@ -40,11 +40,10 @@ const DATA = {
       cover: "images/colecoes/dragonball.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Trunks Sayajin", img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 45 },
-        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 45 }
+        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
+        { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
+        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
+        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" }
       ]
     },
     {
