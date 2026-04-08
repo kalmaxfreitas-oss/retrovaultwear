@@ -26,15 +26,15 @@ const DATA = {
 {
       id: "Promoção",
       name: "Promoção",
-      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
+      desc: "Camisetas em promoção — retrô premium.",
       cover: "images/colecoes/promoção.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Senku",   img: "images/produto/Senku.jpg", price: 35 , preorder: true , size: "P-M-G" },
-        { name: "Baki Hanma", img: "images/produto/baki.jpg", price: 35 , preorder: true , size: "P-M-G"  },
-        { name: "Toji Fushiguro", img: "images/produto/tojifushiguro.jpg", price: 35 , last: true },
-        { name: "Ichigo Kurosaki", img: "images/produto/ichigokurosaki.jpg", price: 35 , last: true },
-        { name: "Edward Elric", img: "images/produto/EdwardElric.jpg", price: 35 , last: true }
+        { name: "Senku",   img: "images/produto/Senku.jpg", price: 35 , size: "P", last: true },
+        { name: "Baki Hanma", img: "images/produto/baki.jpg", price: 35 , size: "P", last: true  },
+        { name: "Toji Fushiguro", img: "images/produto/tojifushiguro.jpg", price: 35 , size: "P", last: true },
+        { name: "Ichigo Kurosaki", img: "images/produto/ichigokurosaki.jpg", price: 35 , size: "P", last: true },
+        { name: "Edward Elric", img: "images/produto/EdwardElric.jpg", price: 35 , size: "P", last: true }
       ]
     },
 
