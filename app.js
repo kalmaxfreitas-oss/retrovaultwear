@@ -40,19 +40,6 @@ const DATA = {
     },
 
     {
-      id: "dragon-ball",
-      name: "Coleção - Dragon Ball",
-      desc: "Camisetas inspiradas no universo de Dragon Ball — retrô premium.",
-      cover: "images/colecoes/dragonball.jpg",
-      tags: ["anime", "retro", "street"],
-      products: [
-        { name: "Goku Sayajin",   img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
-        { name: "Vegeta Sayajin", img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
-        { name: "Piccolo",        img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" },
-        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 45, last: true , size: "M" }
-      ]
-    },
-    {
       id: "street-fighter",
       name: "Coleção - Street Fighter",
       desc: "Camisetas inspiradas no universo de Street Fighter — retrô premium.",
@@ -66,18 +53,7 @@ const DATA = {
         { name: "Vega",    img: "images/produto/vega.jpg", price: 45, size: "M", last: true }
       ]
     },
-     {
-      id: "One Piece",
-      name: "Coleção - One Piece",
-      desc: "Camisetas inspiradas no universo Dragon Ball — retrô premium.",
-      cover: "images/colecoes/onepiece.jpg",
-      tags: ["anime", "retro", "street"],
-      products: [
-        { name: "Luffy", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" },
-        { name: "Ice", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" },
-        { name: "Zoro", img: "images/produto/blanka.jpg", price: 45 , last: true , size: "M" }
-      ]
-    },
+    
      {
       id: "Os Cavaleiros do Zodíaco",
       name: "Coleção - Os Cavaleiros do Zodíaco",
