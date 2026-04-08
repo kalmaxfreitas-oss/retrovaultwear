@@ -33,7 +33,7 @@ const DATA = {
         { name: "Senku",   img: "images/produto/Senku.jpg", price: 35 , preorder: true , size: "P-M-G" },
         { name: "Baki Hanma", img: "images/produto/baki.jpg", price: 35 , preorder: true , size: "P-M-G"  },
         { name: "Toji Fushiguro", img: "images/produto/tojifushiguro.jpg", price: 35 , last: true },
-        { name: "Ichigo Kurosaki", img: "images/produto/ichigo kurosaki.png", price: 35 , last: true },
+        { name: "Ichigo Kurosaki", img: "images/produto/ichigokurosaki.jpg", price: 35 , last: true },
         { name: "Edward Elric", img: "images/produto/EdwardElric.jpg", price: 35 , last: true }
       ]
     },
