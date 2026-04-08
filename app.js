@@ -30,11 +30,10 @@ const DATA = {
       cover: "images/colecoes/promoção.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Goku Sayajin",   img: "images/produto/dhalsin.jpg", price: 35 , preorder: true , size: "P-M-G" },
-        { name: "Trunks Sayajin", img: "images/produto/zoro.jpg", price: 35 , preorder: true , size: "P-M-G"  },
-        { name: "Vegeta Sayajin", img: "images/produto/dhalsin.jpg", price: 35 , last: true },
-        { name: "Piccolo",        img: "images/produto/zoro.jpg", price: 35 , last: true },
-        { name: "Freeza",         img: "images/produto/blanka.jpg", price: 35 , last: true },
+        { name: "Goku Sayajin",   img: "images/produto/EdwardElric.png", price: 35 , preorder: true , size: "P-M-G" },
+        { name: "Trunks Sayajin", img: "images/produto/baki.png", price: 35 , preorder: true , size: "P-M-G"  },
+        { name: "Vegeta Sayajin", img: "images/produto/dr.stone.png", price: 35 , last: true },
+        { name: "Piccolo",        img: "images/produto/ichigo kurosaki.png", price: 35 , last: true },
         { name: "Zoro",           img: "images/produto/zoro.jpg", price: 35 , last: true }
       ]
     },
