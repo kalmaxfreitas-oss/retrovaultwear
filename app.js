@@ -47,7 +47,7 @@ const DATA = {
       products: [
         { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "M", last: true },
         { name: "Dhalsim", img: "images/produto/dhalsin.jpg", price: 45, size: "M", last: true },
-        { name: "Guile",   img: "images/produto/guiler.jpg", price: 45, size: "P,M,G", preorder: true },
+        { name: "Guile",   img: "images/produto/guiler.jpg", price: 45, size: "P-M-G", preorder: true },
         { name: "Sagat",   img: "images/produto/sagat.jpg", price: 45, size: "M", last: true },
         { name: "Vega",    img: "images/produto/vega.jpg", price: 45, size: "M", last: true }
       ]
