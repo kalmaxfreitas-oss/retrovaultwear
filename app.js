@@ -45,11 +45,11 @@ const DATA = {
       cover: "images/colecoes/streetfighter.jpg",
       tags: ["arcade", "retro", "game"],
       products: [
-        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 45, size: "M", last: true },
-        { name: "Dhalsim", img: "images/produto/dhalsin.jpg", price: 45, size: "M", last: true },
-        { name: "Guile",   img: "images/produto/guiler.jpg", price: 45, size: "P-M-G", preorder: true },
-        { name: "Sagat",   img: "images/produto/sagat.jpg", price: 45, size: "M", last: true },
-        { name: "Vega",    img: "images/produto/vega.jpg", price: 45, size: "M", last: true }
+        { name: "Blanka",  img: "images/produto/blanka.jpg", price: 50, size: "M", last: true },
+        { name: "Dhalsim", img: "images/produto/dhalsin.jpg", price: 50, size: "M", last: true },
+        { name: "Guile",   img: "images/produto/guiler.jpg", price: 50, size: "P-M-G", preorder: true },
+        { name: "Sagat",   img: "images/produto/sagat.jpg", price: 50, size: "M", last: true },
+        { name: "Vega",    img: "images/produto/vega.jpg", price: 50, size: "M", last: true }
       ]
     },
     
@@ -60,9 +60,9 @@ const DATA = {
       cover: "images/colecoes/cavaleirosdosodiacos.jpg",
       tags: ["anime", "retro", "street"],
       products: [
-        { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 45, last: true , size: "P" },
-        { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 45, last: true , size: "P" },
-        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 45, last: true , size: "P" }
+        { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 50, last: true , size: "P" },
+        { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 50, last: true , size: "P" },
+        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 50, last: true , size: "P" }
       ]
     },
   ]
