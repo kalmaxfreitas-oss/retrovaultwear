@@ -62,7 +62,7 @@ const DATA = {
       products: [
         { name: "Seiya de Pégaso",   img: "images/produto/saiya.jpg", price: 50, last: true , size: "P" },
         { name: "Shiryu de Dragão",   img: "images/produto/shiryu.jpg", price: 50, last: true , size: "P" },
-        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 50, last: true , size: "P" }
+        { name: "Hyoga de Cisne",    img: "images/produto/cisne.jpg", price: 50, size: "P-M-G", preorder: true }
       ]
     },
   ]
